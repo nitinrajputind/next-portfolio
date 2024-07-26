@@ -42,6 +42,8 @@ nav {
             color: var(--lightest-slate);
             font-size: var(--tsm1);
             counter-reset: nav_list;
+            font-family: var(--fira-code);
+
             &_list {
                 display: flex;
                 gap: 3rem;
@@ -49,13 +51,24 @@ nav {
 
                 &_item {
                     a {
+                        outline: 2px dashed transparent;
+                        transition: 0.3s ease-in-out;
                         color: inherit;
                         text-decoration: none;
                         padding: 10px;
+
                         &::before {
                             counter-increment: nav_list;
                             content: "0" counter(nav_list) ".";
                             margin-right: 5px;
+                            color: var(--theme-color);
+                        }
+
+                        &:focus {
+                            outline-color: var(--theme-color);
+                            fill: #64dad91a;
+                        }
+                        &:hover{
                             color: var(--theme-color);
                         }
                     }
