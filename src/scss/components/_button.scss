@@ -1,0 +1,17 @@
+.btn {
+    color: var(--theme-color);
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid var(--theme-color);
+    border-radius: 4px;
+    font-size: var(--tsm);
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+        background-color: var(--lightest-navy);
+    }
+}

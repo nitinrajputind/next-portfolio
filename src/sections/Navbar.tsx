@@ -1,3 +1,4 @@
+import Button from "@/components/Button";
 import Logo from "@/components/Logo";
 import Link from "next/link";
 import React from "react";
@@ -36,12 +37,17 @@ export default function Navbar() {
               return (
                 <>
                   <li className="nav_items_list_item">
-                    <Link className="nav_items_list_item_link" href={link}>{name}</Link>
+                    <Link className="nav_items_list_item_link" href={link}>
+                      {name}
+                    </Link>
                   </li>
                 </>
               );
             })}
           </ul>
+          <div className="nav_item_button">
+            <Button text={"resume"} link={"/"} />
+          </div>
         </div>
       </div>
     </nav>

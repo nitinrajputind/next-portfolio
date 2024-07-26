@@ -2,9 +2,14 @@ import type { Metadata } from "next";
 import { Raleway, Fira_Code } from "next/font/google";
 import "../scss/index.scss";
 
-const raleway = Raleway({ subsets: ["latin"] });
+const raleway = Raleway({
+  subsets: ["latin"],
+  variable: "--raleway",
+  weight: ["300", "400", "500", "600", "700"],
+});
 const firaCode = Fira_Code({
   subsets: ["latin"],
+  variable: "--fira-code",
   weight: ["300", "400", "500", "600", "700"],
 });
 
@@ -19,10 +24,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${raleway.className} ${firaCode.className}`}>
-        {children}
-      </body>
+    <html lang="en" className={`${raleway.variable} ${firaCode.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }
