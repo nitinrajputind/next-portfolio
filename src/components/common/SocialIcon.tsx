@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { FiGithub, FiInstagram, FiLinkedin, FiTwitter } from "react-icons/fi";
+import "./socialIcon.scss";
 
 export default function SocialIcon() {
   const socialIcons = [
