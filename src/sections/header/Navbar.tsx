@@ -1,7 +1,8 @@
-import Button from "@/components/Button";
-import Logo from "@/components/Logo";
+import Button from "@/components/button/Button";
+import Logo from "@/components/brand/Logo";
 import Link from "next/link";
 import React from "react";
+import "./navbar.scss";
 
 export default function Navbar() {
   const sectionLink = [
