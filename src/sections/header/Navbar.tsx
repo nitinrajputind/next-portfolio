@@ -11,6 +11,10 @@ export default function Navbar() {
       link: "/",
     },
     {
+      name: "About",
+      link: "/#about",
+    },
+    {
       name: "Experince",
       link: "/#experince",
     },
