@@ -1,6 +1,4 @@
 import CardStack from "@/components/techStack/CardStack";
-import react_icon from "../../assets/icons/react_icon.png";
-import Image from "next/image";
 import React from "react";
 
 export default function Experience() {
@@ -9,24 +7,48 @@ export default function Experience() {
       name: "Frontend Skill",
       skill: [
         {
-          name: "HTML",
-          icon: <Image src={react_icon} alt={"react_Icon"} />,
-        },
-        {
-          name: "CSS",
-          icon: <Image src={react_icon} alt={"react_Icon"} />,
-        },
-        {
-          name: "JS",
-          icon: <Image src={react_icon} alt={"react_Icon"} />,
-        },
-        {
           name: "React JS",
-          icon: <Image src={react_icon} alt={"react_Icon"} />,
+          icon: "ic_react",
         },
         {
           name: "Angular",
-          icon: <Image src={react_icon} alt={"react_Icon"} />,
+          icon: "ic_angular",
+        },
+        {
+          name: "Next JS",
+          icon: "ic_nextjs",
+        },
+        {
+          name: "Redux",
+          icon: "ic_redux",
+        },
+        {
+          name: "Mobx",
+          icon: "ic_mobx",
+        },
+        {
+          name: "HTML",
+          icon: "ic_html",
+        },
+        {
+          name: "CSS",
+          icon: "ic_css",
+        },
+        {
+          name: "SCSS",
+          icon: "ic_scss",
+        },
+        {
+          name: "JS",
+          icon: "ic_js",
+        },
+        {
+          name: "tailwind",
+          icon: "ic_tailwind",
+        },
+        {
+          name: "Flutter",
+          icon: "ic_flutter",
         },
       ],
     },
@@ -35,19 +57,97 @@ export default function Experience() {
       skill: [
         {
           name: "Node JS",
-          icon: <Image src={react_icon} alt={"react_Icon"} />,
+          icon: "ic_nodejs",
         },
         {
-          name: "Express JS",
-          icon: <Image src={react_icon} alt={"react_Icon"} />,
+          name: "Firebase",
+          icon: "ic_firebase",
+        },
+        {
+          name: "NPM",
+          icon: "ic_npm",
+        },
+        {
+          name: "json",
+          icon: "ic_json",
         },
         {
           name: "Mongo DB",
-          icon: <Image src={react_icon} alt={"react_Icon"} />,
+          icon: "ic_mongodb",
         },
         {
-          name: "SQL",
-          icon: <Image src={react_icon} alt={"react_Icon"} />,
+          name: "Rest Api",
+          icon: "ic_api",
+        },
+        {
+          name: "Express JS",
+          icon: "ic_express",
+        },
+        {
+          name: "GraphQl",
+          icon: "ic_graphql",
+        },
+      ],
+    },
+    {
+      name: "Tools",
+      skill: [
+        {
+          name: "Vs Code",
+          icon: "ic_vscode",
+        },
+        {
+          name: "Github",
+          icon: "ic_github",
+        },
+        {
+          name: "Git",
+          icon: "ic_git",
+        },
+        {
+          name: "Postman",
+          icon: "ic_postman",
+        },
+        {
+          name: "Replit",
+          icon: "ic_replit",
+        },
+        {
+          name: "CodeSandBox",
+          icon: "ic_codesandbox",
+        },
+        {
+          name: "Gitlab",
+          icon: "ic_gitlab",
+        },
+        {
+          name: "bitbucket",
+          icon: "ic_bitbucket",
+        },
+        {
+          name: "jira",
+          icon: "ic_jira",
+        },
+      ],
+    },
+    {
+      name: "Soft Skills",
+      skill: [
+        {
+          name: "Team Work",
+          icon: "ic_team",
+        },
+        {
+          name: "Problem Solving",
+          icon: "ic_problemsolving",
+        },
+        {
+          name: "Time Management",
+          icon: "ic_timemanagement",
+        },
+        {
+          name: "Collaborative",
+          icon: "ic_collaboration",
         },
       ],
     },

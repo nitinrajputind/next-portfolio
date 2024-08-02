@@ -4,7 +4,7 @@ import "./skill.scss";
 
 interface Skills {
   name: string;
-  icon: React.ReactNode;
+  icon: string;
 }
 
 interface CardStackProps {
