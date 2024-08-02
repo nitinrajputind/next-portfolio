@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import "./about.scss";
-import aboutImage from "../../assets/About.png";
+import aboutImage from "../../assets/image/About.png";
 
 function About() {
   const ref = useRef(null);
