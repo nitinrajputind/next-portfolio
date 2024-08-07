@@ -6,6 +6,7 @@ import Skill from "@/sections/skills/Skill";
 import Navbar from "@/sections/header/Navbar";
 import Hero from "@/sections/hero/Hero";
 import React from "react";
+import Experience from "@/sections/experience/Experience";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero />
         <About />
         <Skill />
+        <Experience />
       </main>
     </div>
   );

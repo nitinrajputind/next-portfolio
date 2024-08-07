@@ -45,7 +45,7 @@ export default function Navbar() {
             {sectionLink.map(({ name, link }) => {
               return (
                 <>
-                  <li className="nav_items_list_item">
+                  <li className="nav_items_list_item" key={name}>
                     <Link className="nav_items_list_item_link" href={link}>
                       {name}
                     </Link>
