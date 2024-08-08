@@ -3,35 +3,9 @@ import Logo from "@/components/brand/Logo";
 import Link from "next/link";
 import React from "react";
 import "./navbar.scss";
+import { sectionLink } from "@/constants/constants";
 
 export default function Navbar() {
-  const sectionLink = [
-    {
-      name: "Home",
-      link: "/",
-    },
-    {
-      name: "About",
-      link: "/#about",
-    },
-    {
-      name: "Skills",
-      link: "/#skills",
-    },
-    {
-      name: "Experience",
-      link: "/#Experience",
-    },
-    {
-      name: "work",
-      link: "/#work",
-    },
-    {
-      name: "contact",
-      link: "/#contact",
-    },
-  ];
-
   return (
     <nav>
       <div className="wrapper">
@@ -42,7 +16,7 @@ export default function Navbar() {
         </div>
         <div className="nav_items">
           <ul className="nav_items_list">
-            {sectionLink.map(({ name, link }) => {
+            {sectionLink && sectionLink?.map(({ name, link }) => {
               return (
                 <>
                   <li className="nav_items_list_item" key={name}>
