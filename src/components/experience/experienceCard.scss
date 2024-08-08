@@ -1,0 +1,68 @@
+.experience_card {
+    padding: 1.25rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    border: 1px solid var(--theme-color);
+    padding: 1.7rem;
+    box-shadow: 0 1px 2px 0 var(--theme-color);
+    border-radius: .375rem;
+    transition: 0.5s ease-in-out;
+
+    &_header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 16px;
+
+        >img {
+            width: 64px;
+            border-radius: 8px;
+        }
+
+        &_details {
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+
+            >h4 {
+                font-size: var(--tlarge);
+                font-family: var(--fira-code);
+                font-weight: 500;
+                color: var(--light-slate);
+            }
+
+            >p {
+                font-size: var(--tbase);
+                font-family: var(--raleway);
+                color: var(--lightest-slate);
+            }
+        }
+    }
+
+    &_details_text {
+        font-family: var(--raleway);
+        color: var(--light-slate);
+        font-size: var(--tlarge);
+        letter-spacing: 0.07rem;
+        line-height: 1.6rem;
+        font-weight: 500;
+    }
+
+    &_skills {
+        font-family: var(--raleway);
+        color: var(--lightest-slate);
+        font-size: var(--tbase);
+        letter-spacing: 0.05rem;
+        line-height: 1.6rem;
+        font-weight: 500;
+
+        .skills_label {
+            margin-right: 10px;
+            font-weight: 800;
+        }
+    }
+}
