@@ -1,4 +1,3 @@
-// SvgIcon.tsx
 import React, { SVGProps } from "react";
 
 interface SvgIconProps extends SVGProps<SVGSVGElement> {
