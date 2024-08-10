@@ -16,17 +16,16 @@ export default function Navbar() {
         </div>
         <div className="nav_items">
           <ul className="nav_items_list">
-            {sectionLink && sectionLink?.map(({ name, link }) => {
-              return (
-                <>
-                  <li className="nav_items_list_item" key={name}>
+            {sectionLink &&
+              sectionLink?.map(({ name, link }, index) => {
+                return (
+                  <li className="nav_items_list_item" key={name || index}>
                     <Link className="nav_items_list_item_link" href={link}>
                       {name}
                     </Link>
                   </li>
-                </>
-              );
-            })}
+                );
+              })}
           </ul>
           <div className="nav_item_button">
             <Button text={"resume"} link={"/"} />

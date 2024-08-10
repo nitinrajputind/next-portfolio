@@ -188,4 +188,13 @@ export const experience = [
     image: inspironLabs,
     skills: "Next.js, Angular, Typescirpt, Jest, Material-UI",
   },
+  {
+    role: "Software Engineer",
+    company: "InspironLabs Software System Pvt. Ltd.",
+    duration: "March-2024 - Present",
+    description:
+      "Developed scalable applications using Next.js, Angular, and React, collaborating with cross-functional teams to deliver high-quality software solutions.",
+    image: inspironLabs,
+    skills: "Next.js, Angular, Typescirpt, Jest, Material-UI",
+  },
 ];
