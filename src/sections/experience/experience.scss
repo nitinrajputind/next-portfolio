@@ -6,6 +6,7 @@
     gap: 1rem;
     justify-content: center;
     min-height: 60vh;
+    margin: 12rem 0;
 
     &_title {
         font-family: var(--raleway);
@@ -46,6 +47,11 @@
         width: 100%;
     }
     &_contanier{
-
+        display: flex;
+        justify-content: space-between;
+        gap: 1.25rem;
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
     }
 }
