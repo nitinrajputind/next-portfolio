@@ -7,6 +7,7 @@ import Navbar from "@/sections/header/Navbar";
 import Hero from "@/sections/hero/Hero";
 import React from "react";
 import Experience from "@/sections/experience/Experience";
+import Projects from "@/sections/projects/Projects";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <About />
         <Skill />
         <Experience />
+        <Projects />
       </main>
     </div>
   );

@@ -18,8 +18,8 @@ export const sectionLink = [
     link: "/#experience",
   },
   {
-    name: "work",
-    link: "/#work",
+    name: "Projects",
+    link: "/#projects",
   },
   {
     name: "contact",
