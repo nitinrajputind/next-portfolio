@@ -21,4 +21,4 @@ import tempratureConverterImage from "./image/TempratureConverter.png";
 import ToDoUIImage from "./image/ToDoUI.png";
 import weatherImage from "./image/weather.png";
 
-export { inspironLabs, aboutImage };
+export { inspironLabs, aboutImage, blogImage};
