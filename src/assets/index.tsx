@@ -29,4 +29,5 @@ export {
   calculatorImage,
   clockImage,
   dictionaryImage,
+  emailTemplateImage
 };
