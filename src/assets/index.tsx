@@ -29,5 +29,6 @@ export {
   calculatorImage,
   clockImage,
   dictionaryImage,
-  emailTemplateImage
+  emailTemplateImage,
+  eshopImage
 };
