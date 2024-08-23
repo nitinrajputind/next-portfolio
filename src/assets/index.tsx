@@ -30,5 +30,6 @@ export {
   clockImage,
   dictionaryImage,
   emailTemplateImage,
-  eshopImage
+  eshopImage,
+  heroImage
 };
