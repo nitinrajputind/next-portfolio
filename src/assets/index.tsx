@@ -31,5 +31,6 @@ export {
   dictionaryImage,
   emailTemplateImage,
   eshopImage,
-  heroImage
+  heroImage,
+  multiFormImage
 };
