@@ -1,4 +1,4 @@
-import { inspironLabs } from "@/assets";
+import { eshopImage, inspironLabs } from "@/assets";
 
 export const sectionLink = [
   {
@@ -196,5 +196,28 @@ export const experience = [
       "Developed scalable applications using Next.js, Angular, and React, collaborating with cross-functional teams to deliver high-quality software solutions.",
     image: inspironLabs,
     skills: "Next.js, Angular, Typescirpt, Jest, Material-UI",
+  },
+];
+
+export const projectsData = [
+  {
+    image: eshopImage,
+    projectName: "EShop",
+    projectLink: "https://netlify.com",
+    projectDescription:
+      "This is a web application that uses the PokeAPI to display information about different Pokemon, including their evolution levels and details. You can compare multiple Pokemon using a queue, and add them to your personal list using Firebase's Firestore database.",
+    projectTech: [
+      "React",
+      "Redux Toolkit",
+      "Bootstrap",
+      "SCSS",
+      "Firebase",
+      "Typescript",
+      "PokeApi",
+    ],
+    projectExternalLinks: {
+      github: "",
+      externalLink: "",
+    },
   },
 ];
