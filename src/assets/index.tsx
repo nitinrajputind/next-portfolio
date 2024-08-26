@@ -32,5 +32,6 @@ export {
   emailTemplateImage,
   eshopImage,
   heroImage,
-  multiFormImage
+  multiFormImage,
+  netflixImage
 };
