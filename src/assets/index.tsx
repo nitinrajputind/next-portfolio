@@ -33,5 +33,6 @@ export {
   eshopImage,
   heroImage,
   multiFormImage,
-  netflixImage
+  netflixImage,
+  nitinBlogImage
 };
