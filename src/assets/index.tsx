@@ -11,7 +11,6 @@ import heroImage from "./image/hero.png";
 import multiFormImage from "./image/multiForm.png";
 import netflixImage from "./image/Netflix.png";
 import nitinBlogImage from "./image/NitinBlog.png";
-import passwordGenrator from "./image/passwordGenrator.png";
 import passwordGenratorImage from "./image/passwordGenrator.png";
 import PortolioImage from "./image/Portolio.png";
 import prepBytesImage from "./image/prepBytes.png";
@@ -34,5 +33,6 @@ export {
   heroImage,
   multiFormImage,
   netflixImage,
-  nitinBlogImage
+  nitinBlogImage,
+  passwordGenratorImage
 };
