@@ -34,5 +34,6 @@ export {
   multiFormImage,
   netflixImage,
   nitinBlogImage,
-  passwordGenratorImage
+  passwordGenratorImage,
+  PortolioImage
 };
