@@ -35,5 +35,6 @@ export {
   netflixImage,
   nitinBlogImage,
   passwordGenratorImage,
-  PortolioImage
+  PortolioImage,
+  prepBytesImage
 };
