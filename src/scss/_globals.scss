@@ -39,6 +39,155 @@ body{
         linear-gradient(180deg, rgba(0,0,0,0.02) 0%, rgba(0,0,0,0.08) 100%);
 }
 
+// =============================================================================
+// 🎨 THEME CUSTOMIZER TYPOGRAPHY STYLES
+// =============================================================================
+
+[data-typography="modern"] {
+    --primary-font: var(--raleway);
+    --code-font: var(--fira-code);
+    --heading-weight: 600;
+    --body-weight: 400;
+}
+
+[data-typography="classic"] {
+    --primary-font: 'Georgia', serif;
+    --code-font: 'Courier New', monospace;
+    --heading-weight: 700;
+    --body-weight: 400;
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Georgia', serif;
+        font-weight: 700;
+    }
+    
+    .hero_name {
+        font-family: 'Georgia', serif;
+    }
+}
+
+[data-typography="tech"] {
+    --primary-font: var(--fira-code);
+    --code-font: var(--fira-code);
+    --heading-weight: 500;
+    --body-weight: 400;
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--fira-code);
+        font-weight: 500;
+        letter-spacing: 0.02em;
+    }
+    
+    .hero_name {
+        font-family: var(--fira-code);
+        letter-spacing: 0.02em;
+    }
+}
+
+// =============================================================================
+// 📐 THEME CUSTOMIZER LAYOUT STYLES
+// =============================================================================
+
+[data-layout="compact"] {
+    --spacing-scale: 0.8;
+    
+    .section {
+        padding: calc(3rem * var(--spacing-scale)) 0;
+    }
+    
+    main {
+        margin: 0 8rem;
+        
+        @media screen and (max-width: 1200px) {
+            margin: 0 4rem;
+        }
+        
+        @media screen and (max-width: 768px) {
+            margin: 0 1rem;
+        }
+    }
+}
+
+[data-layout="spacious"] {
+    --spacing-scale: 1.2;
+    
+    .section {
+        padding: calc(5rem * var(--spacing-scale)) 0;
+    }
+    
+    main {
+        margin: 0 15rem;
+        
+        @media screen and (max-width: 1200px) {
+            margin: 0 10rem;
+        }
+        
+        @media screen and (max-width: 768px) {
+            margin: 0 2rem;
+        }
+    }
+}
+
+[data-layout="minimal"] {
+    --spacing-scale: 1;
+    
+    .section {
+        padding: calc(4rem * var(--spacing-scale)) 0;
+    }
+    
+    // Hide decorative elements in minimal mode
+    .hero_scroll,
+    .achievements_title_line,
+    .projects_title_line,
+    .contact_title_line {
+        display: none;
+    }
+    
+    // Simpler card styles
+    .achievements_card,
+    .project_card {
+        border-radius: var(--border-radius-sm);
+        box-shadow: none;
+        border: 1px solid var(--lightest-navy);
+    }
+}
+
+// =============================================================================
+// ⚡ ANIMATION INTENSITY SCALING
+// =============================================================================
+
+// Reduced animations
+[style*="--animation-scale: 0"] {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+    
+    .starfield {
+        opacity: 0.2 !important;
+    }
+}
+
+// Normal animations (default)
+[style*="--animation-scale: 1"] {
+    // Default behavior
+}
+
+// Enhanced animations
+[style*="--animation-scale: 2"] {
+    .hero_stats_grid > * {
+        animation-duration: calc(var(--animation-duration, 1s) * 1.5);
+    }
+    
+    .starfield__shooting-star {
+        animation-duration: calc(var(--animation-duration, 3s) * 0.7) !important;
+    }
+    
+    .achievements_featured_card {
+        animation-duration: calc(var(--animation-duration, 3s) * 0.8);
+    }
+}
+
 /* Smooth theme transition */
 html[data-theme] body,
 html[data-theme] .section,

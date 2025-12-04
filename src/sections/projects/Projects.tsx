@@ -181,7 +181,7 @@ function Projects() {
       >
         <motion.div className="projects_header" variants={itemVariants}>
           <h2 className="projects_title">
-            <span className="projects_title_number">04.</span>
+            <span className="projects_title_number">06.</span>
             Some Things I&apos;ve Built
           </h2>
           <div className="projects_title_line"></div>

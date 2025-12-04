@@ -252,7 +252,7 @@ function Contact() {
       >
         <motion.div className="contact_header" variants={itemVariants}>
           <h2 className="contact_title">
-            <span className="contact_title_number">04.</span>
+            <span className="contact_title_number">07.</span>
             Get In Touch
           </h2>
           <div className="contact_title_line"></div>

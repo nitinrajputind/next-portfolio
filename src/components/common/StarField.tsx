@@ -1,5 +1,5 @@
 "use client";
-import React, { useCallback, useEffect, useRef } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import "./starField.scss";
 
@@ -24,6 +24,29 @@ const StarField: React.FC<StarFieldProps> = ({
   maxSize = 3,
   className = ""
 }) => {
+  // Check for custom particle density from theme customizer
+  const [customDensity, setCustomDensity] = useState(density);
+  
+  useEffect(() => {
+    const updateDensity = () => {
+      const customValue = getComputedStyle(document.documentElement)
+        .getPropertyValue('--particle-density').trim();
+      if (customValue) {
+        setCustomDensity(parseInt(customValue) || density);
+      }
+    };
+    
+    updateDensity();
+    
+    // Listen for theme customizer changes
+    const observer = new MutationObserver(updateDensity);
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['style']
+    });
+    
+    return () => observer.disconnect();
+  }, [density]);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const starsRef = useRef<Star[]>([]);
   const animationFrameRef = useRef<number>();
@@ -34,7 +57,7 @@ const StarField: React.FC<StarFieldProps> = ({
     const stars: Star[] = [];
     const isLight = document.documentElement.getAttribute('data-theme') === 'light';
     
-    for (let i = 0; i < density; i++) {
+    for (let i = 0; i < customDensity; i++) {
       // Enhanced properties for light theme visibility
       const baseOpacity = isLight ? 0.7 : 0.5;
       const opacityRange = isLight ? 0.3 : 0.5;

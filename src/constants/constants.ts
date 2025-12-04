@@ -22,6 +22,10 @@ export const sectionLink = [
     link: "/#education",
   },
   {
+    name: "Achievements",
+    link: "/#achievements",
+  },
+  {
     name: "Projects",
     link: "/#projects",
   },

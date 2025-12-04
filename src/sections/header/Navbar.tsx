@@ -97,6 +97,13 @@ export default function Navbar() {
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
           >
+            {/* Show scroll hint only if menu has many items */}
+            {sectionLink && sectionLink.length > 6 && (
+              <div className="navbar_mobile_scroll_hint">
+                <span>Scroll to see all sections</span>
+              </div>
+            )}
+            
             <ul className="navbar_mobile_list">
               {sectionLink &&
                 sectionLink?.map(({ name, link }, index) => {

@@ -11,6 +11,7 @@ const About = dynamic(() => import("@/sections/about/About"), { ssr: false });
 const Skill = dynamic(() => import("@/sections/skills/Skill"), { ssr: false });
 const Experience = dynamic(() => import("@/sections/experience/Experience"), { ssr: false });
 const Education = dynamic(() => import("@/sections/education/Education"), { ssr: false });
+const Achievements = dynamic(() => import("@/sections/achievements/Achievements"), { ssr: false });
 const Projects = dynamic(() => import("@/sections/projects/Projects"), { ssr: false });
 const Contact = dynamic(() => import("@/sections/contact/Contact"), { ssr: false });
 const SocialIcon = dynamic(() => import("@/components/common/SocialIcon"), { ssr: false });
@@ -52,6 +53,9 @@ export default function Home() {
         </Suspense>
         <Suspense fallback={<SectionSkeleton height={500} />}>
           <Education />
+        </Suspense>
+        <Suspense fallback={<SectionSkeleton height={600} />}>
+          <Achievements />
         </Suspense>
         <Suspense fallback={<SectionSkeleton height={640} />}>
           <Projects />

@@ -3,6 +3,7 @@ import { Raleway, Fira_Code } from "next/font/google";
 import "../scss/index.scss";
 import { ThemeProvider } from "@/components/common/ThemeProvider";
 import StarField from "@/components/common/StarField";
+import ThemeCustomizer from "@/components/common/ThemeCustomizer";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -107,6 +108,7 @@ export default function RootLayout({
       <body>
         <ThemeProvider>
           <StarField density={80} maxSize={2.5} />
+          <ThemeCustomizer />
           {children}
         </ThemeProvider>
       </body>

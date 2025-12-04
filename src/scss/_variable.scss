@@ -78,6 +78,12 @@
     --tooltip-shadow: 0 8px 25px rgba(0, 0, 0, 0.8), 0 4px 12px rgba(139, 92, 246, 0.3);
     --tooltip-arrow-shadow: rgba(0, 0, 0, 0.3);
     
+    // Theme customizer variables
+    --theme-secondary: #6366f1;
+    --theme-accent: #ec4899;
+    --animation-scale: 1;
+    --particle-density: 80;
+    
     @media screen and (max-width: 480px) {
         --tx2large: 24px;
         --tgiant: clamp(2.5rem, 8vw, 3.5rem);
@@ -110,4 +116,8 @@
     --tooltip-text: #1f2937;
     --tooltip-shadow: 0 8px 25px rgba(0, 0, 0, 0.15), 0 4px 12px rgba(124, 58, 237, 0.2);
     --tooltip-arrow-shadow: rgba(0, 0, 0, 0.1);
+    
+    /* Light theme customizer variables */
+    --theme-secondary: #6366f1;
+    --theme-accent: #ec4899;
 }
